@@ -16,9 +16,6 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// serve up static files (e.g. html and css files)
-app.use(express.static(path.join(__dirname, '../build')));
-
 //routes
 app.use('/api', require('./routes/index'));
 
